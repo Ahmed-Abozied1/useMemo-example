@@ -1,6 +1,6 @@
 import React from "react";
 
-const ViewText=({text})=>{
+const ViewText=({text,addAge})=>{
 
 
 
@@ -15,7 +15,9 @@ apiconnect();
 return(
 <div className="box">
 <p>text include :</p>
+<button onClick={addAge}>addAge</button>
   <p>{text.name}</p>
+  <p>{text.age}</p>
 </div>
 )
 
